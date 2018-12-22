@@ -1,0 +1,90 @@
+package TheFinder;
+public class postforum {
+
+  public Integer post_id;
+  public Integer User_id;
+  public String discription;
+  public String kindofuser;
+  public Integer time;
+  public String catagory;
+  public String Answer;
+  public String Image;
+
+  postcontrol postform = new postcontrol();
+postforum()
+{
+        public void setPostID(String PID)
+	{
+		this.post_id = PID;
+	}
+        public void setUserID(String userid)
+        {
+
+                this.User_id = userid;
+
+        }
+	public void setDiscription(String des)
+	{
+		this.discription = des;
+	}
+	public void setkindofuser(String KIF)
+	{
+		this.kindofuser = KIF;
+	}
+	public void settime(String t)
+	{
+		this.time = t;
+	}
+	public void setcatagory(String cat)
+	{
+		this.catagory = cat;
+	}
+	public void setanswer(String ans)
+	{
+		this.Answer = ans;
+	}
+        public void setimage(String img)
+	{
+		this.Image = img;
+	}
+
+	public int getpostID()
+	{
+		return this.post_id;
+	}
+        public int getUserId()
+        {
+
+            return this.User_id;
+
+         }
+	public String getDiscription()
+	{
+		return this.discription;
+	}
+	public String getkindofuser()
+	{
+		return this.kindofuser;
+	}
+	public int gettime()
+	{
+		return this.time;
+	}
+	public String getcatagory()
+	{
+		return this.catagory;
+	}
+	public String getAnswer()
+	{
+		return this.Answer;
+	}
+        public String getimage()
+	{
+		return this.Image;
+	}
+
+
+}
+
+
+}
