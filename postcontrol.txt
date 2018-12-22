@@ -1,0 +1,80 @@
+import.java.unit.*;
+public class postcontrol
+{
+  postcontrol()
+{
+  postforum ob1 = new postforum();
+  DataBase ob  = new DataBase();  
+
+
+ ArrayList <DataBase> postcontrolDataBase = new ArrayList<DataBase>();
+ 
+public void savepost(int id,String userid, String descp, String kind, int Time, String Catagory,String image)
+   {
+      ob1.catagory = catagory;
+      ob1.discription = descp;
+      ob1.kindofuser = kind;
+      ob1.post_id = id;
+      ob1.User_id = userid;
+      ob1.time = time;
+      ob1.Image = image;
+
+       ob.save_Post(post_id,User_id,kindofuser,catagory,Image,discription,time);
+
+   }
+public void edite_post(Integer postID,String userID,String UserKind,String Category,String Image, String Content)
+  {
+      ob1.catagory = catagory;
+      ob1.discription = content;
+      ob1.kindofuser = UserKind;
+      ob1.post_id = postID;
+      ob1.User_id = userID;
+      ob1.Image = Image;
+
+  ob.EditPost(post_id,User_id,kindofuser,catagory,Image,discription);
+
+
+  }
+
+public void delete_post(Integer postID,String userID )
+  {
+      ob1.post_id = postID;
+      ob1.User_id = userID;
+      ob.DeletePost(post_id,User_id);
+  }
+   
+
+public postforum create_post(int id, String descp, String kind, int time, String catagory) 
+  {
+      
+      ob.catagory = catagory;
+      ob.discription = descp;
+      ob.kindofuser = kind;
+      ob.post_id = id;
+      ob.time = time;
+      //return ob;
+      
+  }
+
+  public postforum getpost(String catag) // mina didn't make a function to call it 
+  {
+     // postforum ob2 = new postforum();
+      this.catagory = catag;
+      return this*;
+  } 
+
+public String verifyanswer(String answer) //mina didn't make a function to call it
+    		  {
+    		      ob.Answer = answer;
+    		      return Answer;
+    		  } 
+
+}
+
+public postforum answerverficationquestion() // here what i will do ..? 
+  {
+ 
+  }
+
+
+}
